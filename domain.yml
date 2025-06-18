@@ -1,0 +1,47 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_service
+  - ask_product
+  - mood_great
+  - mood_unhappy
+  - affirm
+  - deny
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day."
+
+  utter_services:
+    - text: "I can suggest products, chat, and help you navigate this e-commerce app."
+
+  utter_ask_products:
+    - text: "Are you looking for something specific like electronics, fashion, or accessories?"
+
+  utter_suggest_products:
+    - text: "Here are some top products you might like: Smartwatch, Noise-Cancelling Headphones, and AI-powered Lamps."
+
+  utter_iamabot:
+    - text: "I am a smart AI assistant here to help you with shopping and services."
+
+  utter_happy:
+    - text: "That's great to hear! 😊"
+
+  utter_cheer_up:
+    - text: "I'm here for you. Here's something to cheer you up: 🤗"
+
+  utter_did_that_help:
+    - text: "Did that help you feel better?"
+
+actions:
+  - action_suggest_products
+  - action_extract_slots
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

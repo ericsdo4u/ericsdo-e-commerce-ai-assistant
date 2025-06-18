@@ -1,0 +1,17 @@
+models/
+rasa/cache/
+rasa/.rasa/
+__pycache__/
+*.pyc
+*.db
+*.log
+
+# Environment
+.env
+venv/
+*.env
+
+# Editor/OS files
+.DS_Store
+.vscode/
+.idea/large_file_or_folder/
